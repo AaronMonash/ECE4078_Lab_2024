@@ -8,7 +8,7 @@ This first milestone will allow you to become more familiar with the PenguinPi r
 1. The [Installation Guide for physical robot](InstallationGuidePhysical.md) provides detailed instructions on setting up your environment and connecting to the robot.
 2. The [Installation Guide for simulator](../Robot_simulator/InstallationGuideSim.md) provides detailed instructions on using a simulator environment for development. Please note that the simulator environment is provided as an additional support but is not required, as all markings will be done on the physical robot only.
 3. Within your dev environment (VM/native/WSL2, whichever one you use), clone this repo by typing ```git clone https://github.com/AaronMonash/ECE4078_Lab_2024``` inside your terminal.
-4. Navigate to this week's lab by typing the commands ``` cd ECE4078_Lab_2024/Week01-02/```
+4. Navigate to this week's lab by typing the commands ``` cd ECE4078_Lab_2024/Week00-01/```
 
 ## Objective 2: Implement Keyboard Teleoperation
 
@@ -21,7 +21,7 @@ You will implement keyboard teleoperations by editing [line 142 - 155 of operate
 ![GUI Menu](Menu.png?raw=true "GUI Menu")
 ![Teleop GUI](Teleop.png?raw=true "Teleop GUI")
 
-**Note:** In order to run ```operate.py```, your terminal needs to be in the directory where [operate.py](operate.py) is (eg. ```ECE4078_Lab_2024/Week01-02/```)
+**Note:** In order to run ```operate.py```, your terminal needs to be in the directory where [operate.py](operate.py) is (eg. ```ECE4078_Lab_2024/Week00-01/```)
 
 **You don't have to use the provided scripts.** Feel free to be creative and write your own scripts for teleoperating the robot with keyboard.
 
@@ -51,11 +51,11 @@ You will have a **STRICT** 10min time limit to get marked. You may open up the m
 #### Step 1:
 **Do this BEFORE your lab session**
 
-Zip your whole Week01-02 folder (including the util and pics folder, your modified operate.py with the teleop codes, your readme file) and submit it via the Moodle submission box (according to your lab session). This submission is due by the starting time of the lab session, which means you should **submit your script BEFORE you come to the week 3 lab**. 
+Zip your whole Week00-01 folder (including the util and pics folder, your modified operate.py with the teleop codes, your readme file) and submit it via the Moodle submission box (according to your lab session). This submission is due by the starting time of the lab session, which means you should **submit your script BEFORE you come to the week 3 lab**. 
 
 **Tip:** Other than a readme file describing your implementation, you may also include a text file in the zip file with a list of commands to use, if you don't know all the commands by heart.
 
-When submitting codes for marking, you don't need to include the venv in the submission folder, as it would be a big zip file to upload/download and takes forever to unzip. You can install the venv in a local directory, and only submit a Week01-02 zip that includes the required scripts for running the teleoperation (operate.py, util/, pics/) on Moodle. Then during marking activate your local venv, cd into the downloaded and unzipped submission and run the live demo
+When submitting codes for marking, you don't need to include the venv in the submission folder, as it would be a big zip file to upload/download and takes forever to unzip. You can install the venv in a local directory, and only submit a Week00-01 zip that includes the required scripts for running the teleoperation (operate.py, util/, pics/) on Moodle. Then during marking activate your local venv, cd into the downloaded and unzipped submission and run the live demo
 
 Please check that you have clicked the submit button on Moodle (may need to scroll down a bit) when submitting your codes, instead of saving it as a draft.
 
@@ -72,7 +72,7 @@ Please check that you have clicked the submit button on Moodle (may need to scro
 **During marking**
 1. When the demonstrator start to mark you, download your submitted zip file from Moodle and unzip its content to the "LiveDemo" folder
 
-2. Open another terminal, or new tab in the existing terminal, navigate to the "Week01-02" folder which contains the operate.py script
+2. Open another terminal, or new tab in the existing terminal, navigate to the "Week00-01" folder which contains the operate.py script
 
 3. Connect to the physical robot and run the script with ```python3 operate.py --ip 192.168.50.1 --port 8080``` (change the ip address if you need to)
 
