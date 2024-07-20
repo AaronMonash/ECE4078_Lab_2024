@@ -1,7 +1,7 @@
 # How to set up your Simulator Environment
 This readme provides a guide on using the simulator environment.
 
-Please see the [Installation Guide for physical robot](../Week01-02/InstallationGuidePhysical.md) on how to [install Linux](../Week01-02/InstallationGuidePhysical.md#Installing-Linux) and [set up the environment](../Week01-02/InstallationGuidePhysical.md#install-the-environment-from-scratch-in-an-empty-ubuntu-18)
+Please see the [Installation Guide for physical robot](../Week00-01/InstallationGuidePhysical.md) on how to [install Linux](../Week00-01/InstallationGuidePhysical.md#Installing-Linux) and [set up the environment](../Week00-01/InstallationGuidePhysical.md#install-the-environment-from-scratch-in-an-empty-ubuntu-18)
 
 
 # Launch the Simulator Environment
@@ -14,7 +14,7 @@ roslaunch penguinpi_gazebo ECE4078.launch
 You should see a base Gazebo world open with PenguinPi inside an empty map
 ![Empty World](EmptyWorld.png?raw=true "Empty World")
 
-This terminal window will need to stay open while you are working with the simulated robot. **Keep an eye on the messages in this terminal window**, if there are only normal messages (text color in white) and warnings (text color in yellow) then all is good. If you see error messages (text color in red) then you will need to double check if all required packages are installed (see [set up the environment](../Week01-02/InstallationGuidePhysical.md#install-the-environment-from-scratch-in-an-empty-ubuntu-18)). For example, without the ```flask``` python package you won't be able to establish a connection to control the virtual robot spawn inside Gazebo, and you will see an error message about the penguinpi server failing to start.
+This terminal window will need to stay open while you are working with the simulated robot. **Keep an eye on the messages in this terminal window**, if there are only normal messages (text color in white) and warnings (text color in yellow) then all is good. If you see error messages (text color in red) then you will need to double check if all required packages are installed (see [set up the environment](../Week00-01/InstallationGuidePhysical.md#install-the-environment-from-scratch-in-an-empty-ubuntu-18)). For example, without the ```flask``` python package you won't be able to establish a connection to control the virtual robot spawn inside Gazebo, and you will see an error message about the penguinpi server failing to start.
 
 **Open a new terminal** and spawn objects in the map by typing the following commands (right click on scene_manager.py and go to "Properties -> Permissions" to double check that the "Execute" box is ticked. This file is under the ~/catkin_ws/src/penguinpi_gazebo/ folder)
 ```
