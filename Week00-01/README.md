@@ -29,7 +29,7 @@ If you don't want to type the ```--ip``` and ```--port``` args every time, simpl
 ---
 
 ## Marking Instructions 
-You will need to demonstrate your teleoperation implementation on the physical robot during the Week 3 lab session **as individuals**. 
+You will need to demonstrate your teleoperation implementation on the physical robot during the Week 2 lab session **as individuals**. 
 If you have finished the implementation this week, feel free to ask the demonstrators to mark you during this week's session. 
 
 Please follow the [marking steps](#Marking-steps) and submit your implementation to Moodle before asking to be marked.
@@ -51,7 +51,7 @@ You will have a **STRICT** 10min time limit to get marked. You may open up the m
 #### Step 1:
 **Do this BEFORE your lab session**
 
-Zip your whole Week00-01 folder (including the util and pics folder, your modified operate.py with the teleop codes, your readme file) and submit it via the Moodle submission box (according to your lab session). This submission is due by the starting time of the lab session, which means you should **submit your script BEFORE you come to the week 3 lab**. 
+Zip your whole Week00-01 folder (including the util and pics folder, your modified operate.py with the teleop codes, your readme file) and submit it via the Moodle submission box (according to your lab session). This submission is due by the starting time of the lab session, which means you should **submit your script BEFORE you come to the week 2 lab**. 
 
 **Tip:** Other than a readme file describing your implementation, you may also include a text file in the zip file with a list of commands to use, if you don't know all the commands by heart.
 

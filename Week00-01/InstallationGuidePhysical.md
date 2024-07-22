@@ -26,9 +26,9 @@ If you only plan to work with the physical robot, then you only need to install 
 
 2. Navigate to a directory where you want to install the robot-related stuff and open it in a terminal
 
-3. Create a Python virtual environment named "PenguinPi" (this is optional, setting up a venv helps to ensure the robot-related packages won't interfere with your other Python stuff): ```py -3 -m venv PenguinPi```
+3. Create a Python virtual environment named "PenguinPi" (this is optional, setting up a venv helps to ensure the robot-related packages won't interfere with your other Python stuff): ```py -3 -m venv PenguinPi```; or if this doesn't work for you, try ```python -m venv PenguinPi```
 
-4. Activate your venv: ```PenguinPi\Scripts\activate```
+4. Activate your venv: On Windows: ```PenguinPi\Scripts\activate```; On Mac/Linux: ```source PenguinPi/bin/activate```
 
 5. Install pip in the venv: ```python -m pip install -U pip```
 
