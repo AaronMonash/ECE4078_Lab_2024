@@ -6,7 +6,6 @@ This first milestone will allow you to become more familiar with the PenguinPi r
 
 ## Objective 1: Setting up your Environment
 1. The [Installation Guide for physical robot](InstallationGuidePhysical.md) provides detailed instructions on setting up your environment and connecting to the robot.
-2. The [Installation Guide for simulator](../Robot_simulator/InstallationGuideSim.md) provides detailed instructions on using a simulator environment for development. Please note that the simulator environment is provided as an additional support but is not required, as all markings will be done on the physical robot only.
 3. Within your dev environment (VM/native/WSL2, whichever one you use), clone this repo by typing ```git clone https://github.com/AaronMonash/ECE4078_Lab_2024``` inside your terminal.
 4. Navigate to this week's lab by typing the commands ``` cd ECE4078_Lab_2024/Week00-01/```
 
@@ -96,3 +95,7 @@ Please check that you have clicked the submit button on Moodle (may need to scro
 - [ ] Connect to the robot and run the operate.py script
 - [ ] Demonstrate the teleoperation and good luck!
 
+
+
+## Simulator
+[OPTIONAL - Installation Guide for simulator - OPTIONAL](../Robot_simulator/InstallationGuideSim.md) provides detailed instructions on using a simulator environment for development. Please note that the simulator environment is provided as an additional support but is not required, as all markings will be done on the physical robot only.
