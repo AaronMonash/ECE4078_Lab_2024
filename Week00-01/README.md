@@ -25,7 +25,8 @@ You will implement keyboard teleoperations by editing [line 142 - 155 of operate
 **You don't have to use the provided scripts.** Feel free to be creative and write your own scripts for teleoperating the robot with keyboard.
 
 ~If you don't want to type the ```--ip``` and ```--port``` args every time, simply change the default arg values ([line 176-177 in operate.py](operate.py#L176)) to the robot's ip ```192.168.50.1``` and port ```8080```, then the next time you run operate.py with the physical robot you won't need to specify the ip and port any more, simply run ```python3 operate.py```.~
-**The updated operate.py should enable you to run the physical robot just by running ```python3 operate.py````. If you installed the simulation environment and want to run operate.py in simulation, run python3 operate.py --ip localhost --port 40000**
+
+**The updated operate.py should enable you to run the physical robot just by running ```python3 operate.py``` or ```python operate.py```. If you installed the simulation environment and want to run operate.py in simulation, run ```python3 operate.py --ip localhost --port 40000``` or ```python operate.py --ip localhost --port 40000```**
 
 
 ---
