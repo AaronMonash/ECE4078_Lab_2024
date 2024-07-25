@@ -1,4 +1,4 @@
-# Simulator Environment
+# [OPTIONAL] Simulator Environment
 
 We provide a simulator environment using [Gazebo](http://gazebosim.org/) as an addition to the physical robot.
 
