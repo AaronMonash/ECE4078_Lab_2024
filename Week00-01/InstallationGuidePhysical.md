@@ -31,7 +31,7 @@ If you only plan to work with the physical robot, then you only need to install 
 
 7. Install python packages needed for M1 in the venv: ```python -m pip install flask gevent pyyaml numpy requests opencv-python pynput pygame```
 
-Note: if you follow these steps to set up a python venv, every time before running robot-related codes you'll need to activate the venv. Also when running a script, instead of ```python3``` you will use ```python```, e.g., ```python operate.py --ip 192.168.50.1 --port 8080```.
+Note: if you follow these steps to set up a python venv, every time before running robot-related codes you'll need to activate the venv. Also when running a script, instead of ```python3``` you will use ```python```, e.g., ```python operate.py```.
 
 8. To deactivate the env after you are done working inside it type ```deactivate```
 
