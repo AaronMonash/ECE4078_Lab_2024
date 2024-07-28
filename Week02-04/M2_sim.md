@@ -11,7 +11,7 @@
 ### Additional python packages
 You'll need to install required packages by typing the following commands in the terminal:
 ```
-python3 -m pip install machinevision-toolbox-python spatialmath-python==0.8.9 opencv-contrib-python==4.1.2.30 matplotlib
+python3 -m pip install machinevision-toolbox-python==0.9.7 spatialmath-python==1.1.10 opencv-contrib-python==4.10.0.84 matplotlib==3.9.1
 cd ~/catkin_ws/
 source ~/catkin_ws/devel/setup.bash
 catkin_make
