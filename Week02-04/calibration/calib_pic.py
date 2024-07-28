@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import os
 import sys
 
-sys.path.insert(0, "../util")
-from util.pibot import PenguinPi
+sys.path.insert("../util")
+from pibot import PenguinPi
 import pygame
 
 class calibration:
