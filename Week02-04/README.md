@@ -36,7 +36,9 @@ import cv2
 from cv2 import aruco
 from machinevisiontoolbox import Image, CentralCamera
 ```
-If there is no error then everything is successfully installed and you can exit the command line python 3 by typing ```exit()```
+If you run into any issues such as **kiwisolver import error...** or **spatialmath error...**, refer to **FAQ: M2** section
+Otherwise, if there is no error, then everything is successfully installed and you can exit the command line python 3 by typing ```exit()```
+
 
 ### ARUCO markers
 [ARUCO markers](http://www.uco.es/investiga/grupos/ava/node/26) are square fiducial markers introduced by Rafael Muñoz and Sergio Garrido. OpenCV contains a trained [function](https://docs.opencv.org/trunk/d5/dae/tutorial_aruco_detection.html) that detects the ARUCO markers, which will be used in this project (the dictionary we used to generate the markers was ```cv2.aruco.DICT_4X4_100```). PenguinPi will be using these ARUCO markers as aisle labels to help it map the environment and locate itself. 
