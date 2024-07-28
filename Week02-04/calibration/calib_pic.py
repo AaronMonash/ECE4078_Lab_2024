@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import os
 import sys
 
-sys.path.insert("../util")
+sys.path.append("../util")
 from pibot import PenguinPi
 import pygame
 
