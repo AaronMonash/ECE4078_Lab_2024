@@ -88,7 +88,7 @@ cd ~/catkin_ws
 catkin_make
 ```
 
-open ```~/catkin_ws/penguinpi_gazebo/scripts/server``` in a text editor, find [line 399-404](https://bitbucket.org/cirrusrobotics/penguinpi_gazebo/src/5760f245291dc639e146fd4adc3f5328333c2ef7/scripts/server#lines-399) and replace the codes with the following:
+open ```~/catkin_ws/src/penguinpi_gazebo/scripts/server``` in a text editor, find [line 399-404](https://bitbucket.org/cirrusrobotics/penguinpi_gazebo/src/5760f245291dc639e146fd4adc3f5328333c2ef7/scripts/server#lines-399) and replace the codes with the following:
 ```
 serverport = 40000
 http_server = WSGIServer(('', serverport), app)
