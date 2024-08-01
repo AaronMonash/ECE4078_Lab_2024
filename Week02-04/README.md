@@ -20,7 +20,7 @@ You will use your M1 (teleoperation) code to drive your robot around this unknow
 
 **You'll need to install additional python packages!** Type the following commands in the terminal (remember to activate your venv first by typing ```PenguinPi\Scripts\activate```):
 ```
-python3 -m pip install numpy==1.26.4 machinevision-toolbox-python==0.9.7 spatialmath-python==1.1.10 opencv-contrib-python==4.10.0.84 matplotlib==3.9.1
+python3 -m pip install numpy==1.26.4 machinevision-toolbox-python==0.9.7 spatialmath-python==1.1.10 opencv-contrib-python==4.9.0.80 matplotlib==3.9.1
 ```
 If your computer does not recognise ```python3```, just type ```pip install {rest is the same as above}```
 
