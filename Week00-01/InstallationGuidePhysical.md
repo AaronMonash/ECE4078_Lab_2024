@@ -101,6 +101,8 @@ When you are done with the robot, inside the ssh session run ```sudo halt & logo
 - Slow VM on Mac: this might be a resolution issue, see [here](https://www.reddit.com/r/virtualbox/comments/houi9k/how_to_fix_virtualbox_61_running_slow_on_mac/) for fixes. You can also try [enabling 3D acceleration](https://superuser.com/questions/172989/virtualbox-running-ubuntu-is-slow-mac-os-x-host) in VistualBox
 - [NEW] Some Windows 11 users may run into an "Execution Policy Settings" error, with an error message similar to "cannot be loaded because the execution of scripts is disabled on this system", when activating their Python venv. This can be fixed by typing ```Set-ExecutionPolicy Unrestricted -Scope Process``` in a terminal to change your Execution Policy Settings
 - [NEW] Some robots don't show the web browser preview due to an internal server error. You can ignore this error and check if you are connected to the robot by either ssh into it or by running operate.py
+- If you run into any module version issues, here is a set of versions that seem to work.
+- ```pip install flask==3.0.3 gevent==24.2.1 pyyaml==5.4.1 numpy==1.26.4 requests==2.25.1 opencv-python==4.9.0.80 pynput==1.7.7 pygame==2.6.0```
 
 ---
 # Acknowledgement
