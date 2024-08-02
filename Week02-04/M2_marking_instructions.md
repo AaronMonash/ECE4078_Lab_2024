@@ -1,5 +1,5 @@
 # M2 Marking Instructions 
-You will need to demonstrate your SLAM on the physical robot during the Week 6 lab session.
+You will need to demonstrate your SLAM on the physical robot during the Week 5 lab session.
 
 **Please familiarise yourselves with these steps to ensure the demonstrators can finish marking your team in the allocated time**
 - [Marking steps](#marking-steps)
@@ -22,6 +22,8 @@ slam_score = ((0.12 - Aligned_RMSE)/(0.12 - 0.02)) x 80
 **Total M2 mark = slam_score + (NumberOfFoundMarkers x 2) - (NumberOfCollidedMarkers x 5)**
 
 **Note:** If your Aligned_RMSE value goes above the upper bound 0.12, your slam_score will be 0. If the Aligned_RMSE value goes below the lower bound 0.02, your slam_score will be 80, i.e., 0 ≤ slam_score ≤ 80
+
+There will also be an ITP metrics survey that will be sent out to address M2 and M3 together. A viva will be conducted during the marking process for each individual within the group, which will be a short oral assessment to gauge your understanding of the code and how you troubleshooted the issues for each milestone. The ITP value and viva will be applied to your final M2 and M3 scores by a multiplicative formula (ie. M2 score * ITP * viva).
 
 
 ### Marking steps
