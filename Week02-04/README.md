@@ -125,6 +125,8 @@ slam_score = ((0.12 - Aligned_RMSE)/(0.12 - 0.02)) x 80
 
 In the example above, if no collision happened during the live demo, as all 10 markers are found and Aligned_RMSE = 0.075, slam_score = ((0.12 - 0.075)/(0.12 - 0.02)) x 80 = 36, the total M2 mark will be 56 (36+20-0) out of 100pt.
 
+There will also be an ITP metrics survey that will be sent out to address M2 and M3 together. A viva will be conducted during the marking process for each individual within the group, which will be a short oral assessment to gauge your understanding of the code and how you troubleshooted the issues for each milestone. The ITP value and viva will be applied to your final M2 and M3 scores by a multiplicative formula (ie. M2 score * ITP * viva).
+
 ### Marking instructions
 Please see [M2 marking instructions](M2_marking_instructions.md)
 
