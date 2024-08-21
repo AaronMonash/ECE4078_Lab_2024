@@ -11,13 +11,13 @@ class Detector:
         self.model = YOLO(model_path)
 
         self.class_colour = {
-            'pear': (0, 165, 255),
+            'pear': (51, 255, 51),
             'lemon': (0, 255, 255),
-            'lime': (0, 255, 0),
+            'lime': (0, 102, 0),
             'tomato': (0, 0, 255),
             'capsicum': (255, 0, 0),
-            'plum': (255, 255, 0),
-            'pumpkin': (255, 165, 0),
+            'potato': (0, 51, 102),
+            'pumpkin': (0, 127, 255),
             'garlic': (255, 0, 255)
         }
 

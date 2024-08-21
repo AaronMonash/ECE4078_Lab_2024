@@ -10,15 +10,15 @@ output_map_name: test_output.txt
 reference_map: example_reference_map.txt
 
 # fruits - list of fruits to be placed in the arena and their colours
-fruits:
-  lemon: [86, 255, 255]  # BGR
-  pear: [0, 127, 255]
-  tomato: [0, 0, 191]
-  lime: [0, 255, 0]
-  garlic: [255, 255, 255]
-  capsicum: [0, 191, 191]
-  plum: [0, 63, 127]
-  pumpkin: [0, 84, 255]
+fruits: # BGR 
+  lemon: [0, 255, 255] # Yellow
+  pumpkin: [0, 128, 255] # Orange  
+  tomato: [0, 0, 255]  # Red
+  lime: [0, 102, 0] # Dark green
+  garlic: [255, 255, 255] # White
+  capsicum: [255, 255, 0] # Cyan
+  potato: [0, 51, 102] # Dark brown
+  pear: [51, 255, 51] # Bright green
 
 # change this if the GUI is too big for your screen
 image_display_res:
