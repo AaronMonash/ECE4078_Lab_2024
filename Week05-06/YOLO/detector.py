@@ -15,7 +15,7 @@ class Detector:
             'lemon': (0, 255, 255),
             'lime': (0, 102, 0),
             'tomato': (0, 0, 255),
-            'capsicum': (255, 0, 0),
+            'capsicum': (255, 255, 0),
             'potato': (0, 51, 102),
             'pumpkin': (0, 127, 255),
             'garlic': (255, 0, 255)
