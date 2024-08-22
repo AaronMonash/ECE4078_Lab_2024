@@ -11,7 +11,7 @@ In M3, your PenguinPi robot will learn to recognise different types of fruit and
 
 There are 8 possible types of fruits and vegs for the classification model to recognise from, namely potato, lemon, lime, tomato, yellow capsicum, pear, pumpkin, and garlic. There will be 10 objects in the 3mx3m arena in addition to the 10 ARUCO markers. There may be duplicate objects from the same type, or types of object not appearing in the arena, e.g., 2 pears, 2 lemon, 1 lime, 1 tomato, 2 capsicum, 1 pumpkin, 1 garlic (no potato).
 
-[NEW] We have replaced plums with potatoes. Photos of potatoes can be found ![here](https://drive.google.com/drive/folders/1UUOLvzxy7wHpYTi06rEr-E-HfuJTqSdA)
+[NEW] We have replaced plums with potatoes. Photos of potatoes can be found [here](https://drive.google.com/drive/folders/1UUOLvzxy7wHpYTi06rEr-E-HfuJTqSdA)
 
 [NOTE] The fruits have been changed (i.e., now we use potatoes instead of plums)
 
