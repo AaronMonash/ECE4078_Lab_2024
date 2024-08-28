@@ -41,7 +41,7 @@ class MappingUtils:
         idxlist = [other.taglist.index(tag) for tag in self.taglist]
         markers2 = markers2[:, idxlist]
 
-        armse, R, t = self.compute_armse(mark1, markers2)
+        armse, R, t = self.compute_armse(markers1, markers2)
 
         return armse, R, t
 
