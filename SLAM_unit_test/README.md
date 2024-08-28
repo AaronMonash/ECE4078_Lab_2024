@@ -2,7 +2,7 @@
 Credit Tin Tran
 
 ## Usage
-This unit test is used to evaluate your `robot.py` and `EKF.py`. Successfully passing the unit test will give you a good indication that you have implemented SLAM correctly, and my procede to the next tasks. Otherwise, the test report will let you know which part you should be looking into for a correct SLAM implementation.
+This unit test is used to evaluate your `robot.py` and `EKF.py`. Successfully passing the unit test will give you a good indication that you have implemented SLAM correctly, and may procede to the next tasks. Otherwise, the test report will let you know which part you should be looking into for a correct SLAM implementation.
 
 ## Preparation
 1. Copy from your `Week02-04` folder into this folder, `SLAM_unit_test`, the following files and folders:
