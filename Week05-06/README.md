@@ -22,7 +22,7 @@ There are 8 possible types of fruits and vegs for the classification model to re
 **You will need to install a new Python package to your PenguinPi venv to use YOLO:**
 ```
 PenguinPi\Scripts\activate
-python -m pip install ultralytics
+python -m pip install ultralytics==8.0.20
 ```
 
 In Week 5, you will collect and annotate image data to train a fruit&veg classifier using [the YOLOV8 model](https://github.com/ultralytics/ultralytics). Make sure you take enough photos of the fruit and veg models during your Week 5 lab session so that you can work on data annotation and model training outside of the lab. You will also measure the fruit and veg models to get their groundtruth dimensions, which will be used for estimating their location in Week 6.
@@ -130,3 +130,4 @@ Run ```python TargetPoseEst.py```, which will read in the observation saved insi
 - The [TargetPoseEst.py](TargetPoseEst.py) generates an estimation result file as "lab_output/targets.txt", which is then used to be compared against the groundtruth map for computing the target pose estimation errors.
 - **Make sure your modified "TargetPoseEst.py" generates a "targets.txt" file that is in the same format as the [given example output](lab_output/targets.txt)**. Generating the estimation map in a wrong format may resulting in it not being compatible with the evaluation scripts and thus getting 0pt for the [M3 target_est_score](M3_marking.md#evaluation).
 
+[NOTE] Please make sure the versions of your `ultralytics` and `torch` packages are matching between training and testing environments (if you trained with the provided YOLO notebook, use `ultralytics==8.0.20` at test time), or you might get unexpected detection results.
