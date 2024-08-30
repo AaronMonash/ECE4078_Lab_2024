@@ -16,7 +16,7 @@ Credit Tin Tran
 
 2. Replace the following [TODOs] in the skeleton codes with your own implementations:
     * In [operate.py](./operate.py), [line 200](./operate.py#L200) to [line 213](./operate.py#L213).
-    * In [robot.py](./slam/robot.py), [line 79](./slam/robot.py#79) and [line 127](./slam/robot.py#L127)
+    * In [robot.py](./slam/robot.py), [line 79](./slam/robot.py#L79) and [line 127](./slam/robot.py#L127)
     * In [ekf.py](./slam/ekf.py), [line 93](./slam/ekf.py#L93) and [line 117](./slam/ekf.py#L117)
 
     [NOTE] It is important that you keep everything else in the skeleton codes the same!
