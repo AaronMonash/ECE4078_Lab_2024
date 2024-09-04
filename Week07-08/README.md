@@ -35,7 +35,7 @@ To achieve the M4 task, this grocery shopping module can be divided into 3 compo
 Please note that this skeleton code is only a general guide, you can rewrite the whole script if you want. You may also submit multiple scripts/variants of this code for the different marking levels you wish to attempt as described in the [marking scheme](M4_marking.md#evaulation).
 
 **Important notes:**
-- There is a 2pt penalty for every marker or object that the robot collides into. There is also a 5pt penalty for exceeding the arena boundaries. A run with 3 penalties will be terminated. Make sure your implementation handles collision avoidance and the planned paths are within the arena boundaries.
+- There is a 5pt penalty for every marker or object that the robot collides into. There is also a 5pt penalty for exceeding the arena boundaries. A run with 5 penalties will be terminated (5th penalty does not result in a deduction but will end your run immediately). Make sure your implementation handles collision avoidance and the planned paths are within the arena boundaries.
 - The groundtruth maps are provided to you for M4 ONLY (you may choose not use it). Please be aware that in future milestones you will need to generate your own map estimated using your M2&M3 implementation.
 - There are two true maps provided **for the practice arena** (different maps will be used during marking):
 	1. [M4_prac_map_full.txt](M4_prac_map_full.txt) - contains 10 fruits&vegs + 10 markers, it is used for 
