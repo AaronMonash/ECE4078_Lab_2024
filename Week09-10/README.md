@@ -7,13 +7,13 @@
 
 ---
 ## Introduction
-Milestone 5 is the integration of all the modules you completed in the previous milestones. Integrate your work from M1 to M4 so that the robot can create a map of the arena containing the estimated poses of 10 ArUco markers ([M2: SLAM](../Week03-05/)), 10 objects ([M3: CV](../Week06-07/)), and then perform the grocery shopping task ([M4: navigation](../Week08-09/)). The actual task is very similar to the Level 3 M4 task, which is
+Milestone 5 is the integration of all the modules you completed in the previous milestones. Integrate your work from M1 to M4 so that the robot can create a map of the arena containing the estimated poses of 10 ArUco markers ([M2: SLAM](../Week02-04/)), 10 objects ([M3: CV](../Week05-06/)), and then perform the grocery shopping task ([M4: navigation](../Week07-08/)). The actual task is very similar to the Level 3 M4 task, which is
 
-**M5 task:** Given a shopping list ([example](../Week08-09/M4_prac_shopping_list.txt)) of 5 targets, your task is to autonomously navigate to the given list of fruits&vegs in order, while avoiding obstacles along the way. The robot should stop within 0.5m radius of the target for 2 seconds before moving onto the next target. The following also applies to M5:
+**M5 task:** Given a shopping list ([example](../Week07-08/M4_prac_shopping_list.txt)) of 5 targets, your task is to autonomously navigate to the given list of fruits&vegs in order, while avoiding obstacles along the way. The robot should stop within 0.5m radius of the target for 2 seconds before moving onto the next target. The following also applies to M5:
 - **A true map will NOT be given in M5**, only the shopping list will be provided indicating which 5 targets are to be reached in which order
 - You may teleoperate your robot (M1) to first generate a map of the arena with your own SLAM (M2) and CV (M3) before performing the navigation (M4)
 - There will be 10 ArUco markers and 10 objects (5 as navigation targets, 5 as obstacles) in the arena. Similar to M4, the targets on the shopping list will be unique while the obstacles may contain duplicates
-- You may choose to perform semi-auto waypoint navigation (same as [M4 Level 1](../Week08-09/M4_marking.md#level-1-semi-auto-navigation-using-waypoints)) to get partial marks if you are struggling to perform a full auto navigation
+- You may choose to perform semi-auto waypoint navigation (same as [M4 Level 1](../Week07-08/M4_marking.md#level-1-semi-auto-navigation-using-waypoints)) to get partial marks if you are struggling to perform a full auto navigation
 
 **The final demo will follow the same procedure**, M5 is also your trial run for final demo to help you identify improvements to be made before the final demo.
 
@@ -45,7 +45,7 @@ Below are some suggestions on how you may improve your integrated system and liv
         cov = 2 # Higher covariance since turning is less consistent
     ```
 
-- In [ekf.py](../Week03-05/slam/ekf.py#L129) the second expression in the process noise equation can be commented out since it may add too much noise to the model which accumulates even if the robot is idle. However, you can also add a condition to add this term only when the robot is moving or lower the noise. 
+- In [ekf.py](../Week02-04/slam/ekf.py#L129) the second expression in the process noise equation can be commented out since it may add too much noise to the model which accumulates even if the robot is idle. However, you can also add a condition to add this term only when the robot is moving or lower the noise. 
     ```
     Q[0:3,0:3] = self.robot.covariance_drive(raw_drive_meas) #+ 0.01*np.eye(3)
     ```
