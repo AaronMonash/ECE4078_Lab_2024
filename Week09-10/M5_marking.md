@@ -11,7 +11,7 @@ The final demo is likely to be the same as M5, although minor details/rules/mark
 ## Marking schemes
 
 ---
-### [NEW] Updates to M5 marking scheme
+### Updates to M5 marking scheme
 We have adjusted the M5 marking scheme to give higher weights to mapping and to code implementation of navigation addressing the teams' difficulty in getting qualified navigation runs during M5. 
 
 The updated M5 marking scheme is as follow:
