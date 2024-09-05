@@ -43,7 +43,7 @@ Before the navigation task, you may choose to manually drive the robot around fi
 
 Either way, we will evaluate your ```slam.txt``` and ```targets.txt``` for arena mapping. Please make sure that your generated maps follow the same format of the [example SLAM](../Week05-06/lab_output/slam.txt) and [target map](../Week05-06/lab_output/targets.txt) and pair them by including attempt number IDs when renaming the maps as "slam_{attempt_no}_{team_no}.txt" and "targets_{attempt_no}_{team_no}.txt" (see Step 3 of the [Marking Steps](#marking-steps)).
 
-Similar to M4, there is a 2pt penalty for collision with markers or objects, and a 5pt penalty for going out of the arena boundaries. In a mapping run, you are allowed a maximum of five penalties (collision or out-of-boundary). The third time a penalty happens that run is terminated and will not qualify for map marking. When you are manually mapping the arena (if you choose to), you must start at the origin (0, 0, 0).
+Similar to M4, there is a 5pt penalty for collision with markers or objects, and a 5pt penalty for going out of the arena boundaries. In a mapping run, you are allowed a maximum of five penalties (collision or out-of-boundary). The fifth time a penalty happens that run is terminated and will not qualify for map marking. When you are manually mapping the arena (if you choose to), you must start at the origin (0, 0, 0).
 
 Your SLAM and object maps will be evaluated using [mapping_eval.py](../Week05-06/mapping_eval.py). If your estimation maps are not in the expected format and cannot be compared against a groundtruth map ([example groundtruth map](../Week07-08/M4_prac_map_full.txt)) by the evaluation script you will receive 0pt for arena mapping.
 
@@ -86,7 +86,7 @@ In a qualified run that reaches the end condition, you will receive 10pts for su
 
 ---
 ### Rules
-1. Penalty of -2pts for marker/object collisions
+1. Penalty of -5pts for marker/object collisions
 
 2. Penalty of -5pts each time the robot goes out of the boundary/touches the boundary (+/-1.5m from the origin, in both the x- and y-axis)
 
