@@ -99,7 +99,7 @@ nav_score = 5 + 5 + max(NumberOfSuccessNav * 6 - Penalty,0)
 0 ≤ nav_score ≤ 40
 ~~~
 
-[NOTE] The score for each level are calculated separately and the higher of the two will be used as your final navigation score. For example, if you attempted semi-auto with 3 successful collections, 1 collisions and 1 out-of-bound, which results in ```(5) + 3*2 - 2 - 2 = 7 (pts)```. Then, you show your code evidence for full auto, which gives you ```10pts```. In that case, your navigation score will be 10pts. However, if you attempted semi-auto with 5 successful collections, 0 collisions and 0 out-of-bounds, which results in ```5 + 5*2 - 0 - 0 = 15 (pts)```. Then, you complete a fully auto run with 2 successful collections and 4 collisions, which results in ```(10) + 2*6 - 4*3 = 10 pts```. In that case, your navigation score will be 15pts.
+[NOTE] The score for each level are calculated separately and the higher of the two will be used as your final navigation score. For example, if you attempted semi-auto with 3 successful collections, 1 collisions and 1 out-of-bound, which results in ```(5) + 3*2 - 2 - 2 = 7 (pts)```. Then, you show your code evidence for full auto, which gives you ```10pts```. In that case, your navigation score will be 10pts. However, if you attempted semi-auto with 5 successful collections, 0 collisions and 0 out-of-bounds, which results in ```5 + 5*2 - 0 - 0 = 15 (pts)```. Then, you complete a fully auto run with 2 successful collections and 4 collisions, which results in ```(10) + 2*6 - 4*3 = 10 pts```. In that case, your navigation score will be 15pts. You do not need to attempt an auto level run to receive marks for path-planning evidence
 
 ---
 ### Rules
