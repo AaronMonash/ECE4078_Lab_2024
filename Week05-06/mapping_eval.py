@@ -3,7 +3,7 @@ import numpy as np
 from copy import deepcopy
 
 # list of target fruit and veg types
-TARGET_TYPES = ['pear', 'lemon', 'lime', 'tomato', 'capsicum', 'potato', 'pumpkin', 'garlic']
+TARGET_TYPES = ['orange', 'lemon', 'lime', 'tomato', 'capsicum', 'potato', 'pumpkin', 'garlic']
 
 ####################################
 # read ground-truth map containing both ARUCO and target poses
@@ -119,15 +119,28 @@ def apply_transform(theta, x, points):
 
 def compute_slam_rmse(points1, points2):
     # Compute the RMSE between two matched sets of 2D points.
-    assert (points1.shape[0] == 2)
-    assert (points1.shape[0] == points2.shape[0])
-    assert (points1.shape[1] == points2.shape[1])
+    assert(points1.shape[0] == 2)
+    assert(points1.shape[0] == points2.shape[0])
+    assert(points1.shape[1] == points2.shape[1])
     num_points = points1.shape[1]
-    residual = (points1 - points2).ravel()
-    MSE = 1.0 / num_points * np.sum(residual ** 2)
-
-    return np.sqrt(MSE)
-
+    residual = (points1-points2)
+    # Finding highest rmse for unknown markers
+    if num_points != 10:
+        highest_residual = 0
+        highest_residual_index = 0
+        for i in range(num_points):
+            if residual[0][i]**2 + residual[1][i]**2>highest_residual:
+                highest_residual = residual[0][i]**2 + residual[1][i]**2
+                highest_residual_index = i
+        highest_residual_array = [[residual[0][highest_residual_index]],[residual[1][highest_residual_index]]]
+        for i in range(10-num_points):
+            residual = np.concatenate((residual, highest_residual_array), axis =1)
+            
+    unraveled_residual = residual    
+    residual = residual.ravel()    
+    MSE = 1.0/10 * np.sum(residual**2)
+    
+    return np.sqrt(MSE), unraveled_residual
 ####################################
 # for target pose estimation evaluation
 def compute_object_est_error(gt_list, est_list):
@@ -229,7 +242,7 @@ if __name__ == '__main__':
         theta, x = solve_umeyama2d(slam_est_vec, slam_gt_vec)
         slam_est_vec_aligned = apply_transform(theta, x, slam_est_vec)
 
-        slam_rmse = compute_slam_rmse(slam_est_vec_aligned, slam_gt_vec)
+        slam_rmse, residuals = compute_slam_rmse(slam_est_vec_aligned, slam_gt_vec)
 
         print(f'The SLAM RMSE = {np.round(slam_rmse, 3)}')
 
@@ -245,11 +258,13 @@ if __name__ == '__main__':
         theta, x = solve_umeyama2d(slam_est_vec, slam_gt_vec)
         slam_est_vec_aligned = apply_transform(theta, x, slam_est_vec)
 
-        slam_rmse_raw = compute_slam_rmse(slam_est_vec, slam_gt_vec)
-        slam_rmse_aligned = compute_slam_rmse(slam_est_vec_aligned, slam_gt_vec)
+        slam_rmse_raw, residuals_raw = compute_slam_rmse(slam_est_vec, slam_gt_vec)
+        slam_rmse_aligned, residuals_aligned = compute_slam_rmse(slam_est_vec_aligned, slam_gt_vec)
 
         print(f'The SLAM RMSE before alignment = {np.round(slam_rmse_raw, 3)}')
         print(f'The SLAM RMSE after alignment = {np.round(slam_rmse_aligned, 3)}')
+        print("Marker errors (Highest error assumed for unseen markers)")
+        print("np.array("+np.array2string(residuals_aligned, precision=4, separator=',')+')')
 
         print('----------------------------------------------')
         # evaluate object pose estimation errors
