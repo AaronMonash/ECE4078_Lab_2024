@@ -23,7 +23,7 @@ Either way, we will evaluate your ```slam.txt``` and ```targets.txt``` for arena
 
 Your SLAM and object maps will be evaluated using [mapping_eval.py](../Week05-06/mapping_eval.py). If your estimation maps are not in the expected format and cannot be compared against a groundtruth map ([example groundtruth map](../Week07-08/M4_prac_map_full.txt)) by the evaluation script you will receive 0pts for arena mapping.
 
-The mark calculation will be adjusted according to changes in the total arena mapping scores. We recommend you change [line 286](../Week05-06/mapping_eval.py#L286) to
+The mark calculation will be adjusted according to changes in the total arena mapping scores. We recommend you change [line 301](../Week05-06/mapping_eval.py#L286) to
 ```
 slam_score = ((0.12 - slam_rmse_aligned)/(0.12 - 0.02)) * 24 + len(taglist) * 0.6
 target_est_score = np.sum(target_scores) * 0.375
