@@ -286,12 +286,12 @@ if __name__ == '__main__':
         target_scores = []
         for object_err in object_est_errors_aligned:
             est_err = object_est_errors_aligned[object_err]
-            if est_err > 1.0:
+            if est_err > 0.3:
                 target_score = 0
             elif est_err <= 0.025:
                 target_score = 8
             else:
-                target_score = (1.0-est_err)/(1-0.025) * 8.0
+                target_score = (0.3-est_err)/(0.3-0.025) * 8.0
             err_lst.append(est_err)
             target_scores.append(target_score)
 

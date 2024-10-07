@@ -7,7 +7,7 @@ The task for the final demo is the same as your trial run in [M5](../Week09-10#i
 The final demo evaluation schemes are the same as your trial run in [M5](../Week09-10/M5_marking.md#marking-schemes). Please note that the final demo accounts for 60% of your unit mark.
 
 ## Marking procedure
-The final demo marking procedure is the same as your trial run in [M5](../Week09-10/M5_marking.md#marking-steps). However, we have highlighted key differences between M5 and final demo.
+The final demo marking procedure is the same as your trial run in [M5](../Week09-10/M5_marking.md#marking-steps). However, we have highlighted key differences between M5 and the final demo. Make sure to read through the original marking instructions and the changes here carefully. 
 
 ---
 
@@ -17,12 +17,28 @@ The final demo marking procedure is the same as your trial run in [M5](../Week09
   - The total duration of your Final Demo is increased to **30min**.
   - Within this 30min, you need to download and unzip your submitted codes, perform the demo, reset arena in between runs if needed, and submit your generated SLAM and targets maps with the required format and file names.
 
-**2. Qualified navigation run and penalty scheme**
-  - To achieve a qualified navigation run, you need to navigate to **3 out of the 5** targets in the order specified in the shopping list, and for each of them stop within 1m of the target (you will only get marks for successfully navigating to a target if the robot is within 0.5m of that target).
-  - After the robot has navigated to 3 targets, you may stop the run at any time either manually or as your program stops by itself and keep the marks you've earned so far. For example, if your robot successfully navigated to the 1st and 2nd target without penalty, and you stopped it within 1m radius but outside of 0.5m radius of the 3rd target in a full auto run, you will receive 16pt for that run (a qualified run with marks containing two successful targets).
-    - You are not allowed to manually reset the robot or the arena during a semi or full auto navigation run, such as moving aside a marker block that the robot gets stuck behind.
-    - Manual interference to code execution during a full auto run after the run is launched with your one command will immediately terminate that run
-    - The penalty will not exceed the total mark of the run: 0 ≤ (score of a semi auto run) ≤ 15pt, 0 ≤ (score of a full auto run) ≤ 40pt
+**2. Changes to marking calculations and clarifying map submission details**
+  - Target pose estimation will now be evaluated using an updated formula (Changing upper bound to 30cm instead of 1m), mapping_eval.py has been changed to account for this (lines 274 and 279):
+  ~~~
+  target_score[object] = (0.3 - estimation_error[object])/(0.3-0.025) x 3
+  target_est_score = sum(target_score)
+  0 ≤ target_est_score ≤ 30
+  
+  Line 274 changed to: if est_err > 0.3:
+  Line 279 changed to: target_score = (0.3-est_err)/(0.3-0.025) * 8.0
+  ~~~
+  - All other marking calculations will remain the same.
+  - Additionally, you must submit your files in following file structure:
+  ~~~
+  M5_maps
+  ├── slam_0.txt
+  ├── slam_1.txt
+  ├── targets_0.txt
+  ├── targets_1.txt
+  ⋮
+  ~~~
+  - You may receive 0 marks for mapping if you fail to follow this file structure. We will also not be accepting maps in different formats (such as combined formats), these maps will automatically receive a 0.
+  - You must also attend you Viva in week 12 unless you have special consideration, failure to do so will result in you receiving 0 marks for the final demonstration.
 
 **3. Individual contributions to team and mark scaling**
   - The 3rd and last ITP survey will be open from 6pm 18th Oct to 6pm 23rd Oct. The results will be used to inform the individual scaling factors applied to M5 and Final Demo's team scores.
