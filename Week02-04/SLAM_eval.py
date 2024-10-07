@@ -99,7 +99,7 @@ def compute_rmse(points1, points2):
     residual = residual.ravel()    
     MSE = 1.0/10 * np.sum(residual**2)
     
-    return np.sqrt(MSE), unraveled_residual
+    return np.sqrt(MSE)
 
 
 if __name__ == '__main__':
