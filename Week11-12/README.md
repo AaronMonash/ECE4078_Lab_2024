@@ -17,7 +17,7 @@ The final demo marking procedure is the same as your trial run in [M5](../Week09
   - The total duration of your Final Demo is increased to **30min**.
   - Within this 30min, you need to download and unzip your submitted codes, perform the demo, reset arena in between runs if needed, and submit your generated SLAM and targets maps with the required format and file names.
 
-**2. Changes to marking calculations and clarifying map submission details**
+**2. Changes to marking calculations and clarifying map submission details [NEW]**
   - Target pose estimation will now be evaluated using an updated formula (Changing upper bound to 30cm instead of 1m), mapping_eval.py has been changed to account for this (lines 274 and 279):
   ~~~
   target_score[object] = (0.3 - estimation_error[object])/(0.3-0.025) x 3
