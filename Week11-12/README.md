@@ -38,7 +38,7 @@ The final demo marking procedure is the same as your trial run in [M5](../Week09
   ⋮
   ~~~
   - You may receive 0 marks for mapping if you fail to follow this file structure. We will also not be accepting maps in different formats (such as combined formats), these maps will automatically receive a 0.
-  - You must also attend you Viva in week 12 unless you have special consideration, failure to do so will result in you receiving 0 marks for the final demonstration.
+  - You must also attend your Viva in week 12 unless you have special consideration, failure to do so will result in you receiving 0 marks for the final demonstration.
 
 **3. Individual contributions to team and mark scaling**
   - The 3rd and last ITP survey will be open from 6pm 18th Oct to 6pm 23rd Oct. The results will be used to inform the individual scaling factors applied to M5 and Final Demo's team scores.
