@@ -41,7 +41,7 @@ The final demo marking procedure is the same as your trial run in [M5](../Week09
   - You must also attend your Viva in week 12 unless you have special consideration, failure to do so will result in you receiving 0 marks for the final demonstration.
 
 **3. Individual contributions to team and mark scaling**
-  - The 3rd and last ITP survey will be open from 6pm 18th Oct to 6pm 23rd Oct. The results will be used to inform the individual scaling factors applied to M5 and Final Demo's team scores.
+  - The 3rd and last ITP survey will be open from 6pm 18th Oct to 6pm 23rd Oct. The results will be used to inform the individual scaling factors applied to the Final Demo's team scores (Edit: This previously mentioned that it would apply to both M5 and Final Demo, this will only apply to the Final Demo).
   - We may conduct individual interview and code reviews as part of the final assessment to understand an individual's contribution to the team. The interview results may be used to adjust the individual scaling factor. The teaching team will email individuals during Swot Voc to arrange this interview if needed.
 
 **4. Other**
